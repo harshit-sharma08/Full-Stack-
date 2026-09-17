@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Rotating Rainbow</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    width:100vw;
+    height:100vh;
+    overflow:hidden;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    background:#000;
+}
+
+/* Rotating color wheel */
+.rainbow{
+    width:180vmax;
+    height:180vmax;
+    border-radius:50%;
+    position:relative;
+
+    background: conic-gradient(
+        red,
+        orange,
+        yellow,
+        lime,
+        cyan,
+        blue,
+        violet,
+        magenta,
+        red
+    );
+
+    filter: blur(35px) saturate(180%);
+    animation: spin 8s linear infinite;
+}
+
+/* Soft center glow */
+.rainbow::after{
+    content:"";
+    position:absolute;
+    inset:22%;
+    border-radius:50%;
+    background: radial-gradient(circle,
+        rgba(255,255,255,0.18) 0%,
+        rgba(255,255,255,0.08) 25%,
+        rgba(0,0,0,0) 70%);
+    filter: blur(10px);
+}
+
+.text{
+    position:absolute;
+    color:#000;
+    font-size:32px;
+    font-weight:bold;
+    font-family:Arial, Helvetica, sans-serif;
+    z-index:10;
+}
+
+@keyframes spin{
+    from{ transform:rotate(0deg); }
+    to{ transform:rotate(360deg); }
+}
+</style>
+</head>
+<body>
+
+<div class="rainbow"></div>
+<div class="text">Harshit Sharma</div>
+
+</body>
+</html>
