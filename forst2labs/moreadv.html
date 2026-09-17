@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Beautiful Image Gallery</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:'Poppins',sans-serif;
+    background:linear-gradient(135deg,#EEF2FF,#DFF6FF);
+    color:#333;
+}
+
+.container{
+    width:85%;
+    max-width:900px;
+    margin:40px auto;
+}
+
+h1{
+    text-align:center;
+    color:#2C3E50;
+    margin-bottom:35px;
+    font-size:40px;
+}
+
+.card{
+    background:white;
+    border-radius:15px;
+    overflow:hidden;
+    margin-bottom:30px;
+    box-shadow:0 8px 20px rgba(0,0,0,0.12);
+    transition:0.3s;
+}
+
+.card:hover{
+    transform:translateY(-8px);
+    box-shadow:0 15px 30px rgba(0,0,0,0.18);
+}
+
+.card img{
+    width:100%;
+    height:300px;
+    object-fit:cover;
+}
+
+.content{
+    padding:25px;
+}
+
+.content h2{
+    color:#34495E;
+    margin-bottom:15px;
+}
+
+.content p{
+    color:#555;
+    line-height:1.8;
+    font-size:17px;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<div class="container">
+
+<h1>Beautiful Nature Gallery</h1>
+
+<div class="card">
+    <img src="https://picsum.photos/id/1015/800/400" alt="Mountain">
+
+    <div class="content">
+        <h2>Beautiful Mountains</h2>
+
+        <p>
+            Mountains are among the most beautiful creations of nature.
+            Their fresh air, peaceful environment, and stunning scenery
+            make them a perfect destination for adventure and relaxation.
+        </p>
+    </div>
+</div>
+
+<div class="card">
+    <img src="https://picsum.photos/id/1016/800/400" alt="Forest">
+
+    <div class="content">
+        <h2>Green Forest</h2>
+
+        <p>
+            Forests provide clean air, fresh water, and homes for countless
+            animals. Walking through a green forest gives a feeling of peace
+            and helps reduce stress.
+        </p>
+    </div>
+</div>
+
+<div class="card">
+    <img src="https://picsum.photos/id/1018/800/400" alt="Lake">
+
+    <div class="content">
+        <h2>Peaceful Lake</h2>
+
+        <p>
+            A calm lake surrounded by nature creates a relaxing atmosphere.
+            Watching the reflection of the sky on the water reminds us of
+            the beauty and simplicity of nature.
+        </p>
+    </div>
+</div>
+
+</div>
+
+</body>
+</html>
