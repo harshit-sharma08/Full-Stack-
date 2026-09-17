@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Tourism Sticky Cards</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family: Arial, sans-serif;
+    background:#111;
+    color:white;
+}
+
+header{
+    text-align:center;
+    padding:60px 20px;
+}
+
+header h1{
+    font-size:60px;
+    letter-spacing:3px;
+    color:#fff;
+}
+
+.container{
+    width:100%;
+    max-width:900px;
+    margin:auto;
+    padding-bottom:400px;
+}
+
+.card{
+    width:100%;
+    height:500px;
+    border-radius:20px;
+    overflow:hidden;
+    position:sticky;
+    top:30px;
+    margin-bottom:40px;
+    box-shadow:0 15px 30px rgba(0,0,0,0.4);
+    background:#222;
+}
+
+.card img{
+    width:100%;
+    height:420px;
+    object-fit:cover;
+}
+
+.card h2{
+    text-align:center;
+    padding:20px;
+    font-size:32px;
+    background:#fff;
+    color:#111;
+}
+</style>
+</head>
+<body>
+
+<header>
+    <h1>Tourism</h1>
+</header>
+
+<div class="container">
+
+    <div class="card">
+        <img src="https://images.unsplash.com/photo-1564507592333-c60657eea523?w=1200&q=80" alt="Taj Mahal">
+        <h2>Taj Mahal</h2>
+    </div>
+
+    <div class="card">
+        <img src="https://images.unsplash.com/photo-1477587458883-47145ed94245?w=1200&q=80" alt="Jaipur">
+        <h2>Jaipur</h2>
+    </div>
+
+    <div class="card">
+        <img src="https://images.unsplash.com/photo-1524492412937-b28074a5d7da?w=1200&q=80" alt="Varanasi">
+        <h2>Varanasi</h2>
+    </div>
+
+    <div class="card">
+        <img src="https://images.unsplash.com/photo-1512453979798-5ea266f8880c?w=1200&q=80" alt="Goa">
+        <h2>Goa</h2>
+    </div>
+
+    <div class="card">
+        <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=1200&q=80" alt="Kerala Backwaters">
+        <h2>Kerala Backwaters</h2>
+    </div>
+
+</div>
+
+</body>
+</html>
