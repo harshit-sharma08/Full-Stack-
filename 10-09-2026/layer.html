@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <style>
+        @layer base, special,morespecial;
+        @layer base{
+            .para{
+                font-size : 30px;color:red;
+            }
+        }
+        @layer special{
+            .highlight-para{
+                font-size:45px;
+                color:blue;
+            }
+        }
+        @layer morespecial{
+            .highlight-para{
+                font-size:45px;
+                color:blue;
+            }
+        }
+        
+    </style>
+
+    </head>
+    <body>
+        <p class="para highlight-para">Hello World</p>
+    </body>
+</html>
