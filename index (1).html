@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task2</title>
+    <style>
+        * {
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+            }
+
+            body {
+                font-family: Arial, sans-serif;
+                background: #F8FAFC;
+            }
+
+            .navbar {
+                height: 70px;
+                background: white;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                padding: 0 40px;
+                border-bottom: 1px solid #E5E7EB;
+            }
+
+            .logo {
+                font-size: 20px;
+                font-weight: bold;
+                color: #2563EB;
+            }
+
+            .search {
+                width: 350px;
+            }
+
+            .search input {
+                width: 100%;
+
+                padding: 10px;
+
+                border: 1px solid #E5E7EB;
+
+                border-radius: 8px;
+            }
+
+            .icons {
+                display: flex;
+                gap: 20px;
+            }
+            .container {
+                max-width: 1280px;
+                margin: auto;
+                padding: 25px;
+            }
+
+            .breadcrumb {
+                font-size: 14px;
+                color: #6B7280;
+                margin-bottom: 25px;
+            }
+
+
+
+            .main-content {
+                display: flex;
+                gap: 32px;
+            }
+
+            .sidebar {
+                width: 240px;
+                flex-shrink: 0;
+                background: white;
+                border: 1px solid #E5E7EB;
+                border-radius: 12px;
+                padding: 20px;
+            }
+
+            .products {
+                flex: 1;
+            }
+
+            .sidebar h2 {
+            font-size: 16px;
+        }
+
+        .filter-section {
+            margin-top: 25px;
+        }
+
+        .filter-section h3 {
+            font-size: 14px;
+
+            margin-bottom: 12px;
+        }
+
+        .filter-section label {
+            display: flex;
+
+            gap: 8px;
+
+            margin-bottom: 10px;
+
+            font-size: 14px;
+
+            color: #6B7280;
+        }
+
+        .apply-btn {
+            width: 100%;
+
+            margin-top: 20px;
+
+            padding: 10px;
+
+            border: none;
+
+            border-radius: 6px;
+
+            background: #2563EB;
+
+            color: white;
+
+            cursor: pointer;
+}
+    </style>
+</head>
+<body>
+    
+    <nav class="navbar">
+        <div class="logo">Shopkart</div>
+        <div class="search">
+            <input type="text" placeholder="Search products...">
+        </div>
+        <div class="icons">
+            <div class="icon">🛒</div>
+            <div class="icon">👤</div>
+        </div>
+    </nav>
+    
+
+    <div class="main">
+        <div class="text">Electronics > Laptops</div>
+
+        <div class="main-content">
+            <aside class="sidebar">
+                <h2>Filters</h2>
+                // Add filter options here
+                <div class="filter-section">
+                    <h3>Category</h3>
+                    <label><input type="checkbox"> Laptops</label><br>
+                    <label><input type="checkbox"> Desktops</label><br>
+                    <label><input type="checkbox"> Tablets</label><br>
+                    <label><input type="checkbox"> Accessories</label>
+                </div>
+                <div class="filter-section">
+                    <h3>Price Range</h3>
+                    <label><input type="checkbox"> $0 - $25000</label><br>
+                    <label><input type="checkbox"> $25000 - $50000</label><br>
+                    <label><input type="checkbox"> $50000 - $100000</label><br>
+                    <label><input type="checkbox"> $100000+</label>
+                </div>
+                <div class="filter-section">
+                    <h3>Brands</h3>
+                    <label><input type="checkbox"> Apple</label><br>
+                    <label><input type="checkbox"> Dell</label><br>
+                    <label><input type="checkbox"> HP</label><br>
+                    <label><input type="checkbox"> Lenovo</label>
+                </div>
+                <button class="apply-btn">
+                    Apply Filters
+                </button>
+            </aside>
+
+            <section class="products">
+                <h2>Products</h2>
+            </section>
+        </div>
+    </div>
+
+</body>
+</html>
